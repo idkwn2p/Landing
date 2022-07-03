@@ -1,3 +1,95 @@
 * {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Make flex containers */
+.hero,
+.header,
+.main,
+.links ul {
+    display: flex;
+}
+
+.hero, 
+footer {
+    background-color: #1f2937;
+}
+
+.hero {
+    flex-direction: column;
+    padding-inline: 100px;
+}
+
+.header {
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 10px;
+    gap: 50px;
+}
+
+.main {
+    padding-block: 60px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 10px;
+}
+
+.links ul {
+    gap: 20px;
+}
+
+/* Get rid of bullet points and link decorators */
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Resize image */
+.main img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.title,
+.logo {
+    color: #f9faf8;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.links a,
+.secondary,
+.button {
+    color: #e5e7eb;
+}
+
+.button {
+    background-color: #3882f6;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #3e72c6;
 }
