@@ -94,3 +94,19 @@ a {
 .button:hover {
     background-color: #3e72c6;
 }
+
+.products {
+    display: flex;
+    justify-content: center;
+    padding-block: 50px;
+}
+
+.products .title, 
+.quote .text {
+    font-size: 36px;
+}
+
+.products .title {
+    font-weight: extra-bold;
+    color: #1f2937;
+}
