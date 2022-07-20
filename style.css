@@ -4,6 +4,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body,
+html {
+    height: 100%;
+}
+
 /* Fonts and Colors */
 
 .hero {
@@ -21,7 +26,7 @@
 
 .main .main-text {
     font-size: 48px;
-    font-weight: extra-bold;
+    font-weight: bolder;
 }
 
 .links a,
@@ -37,10 +42,17 @@
 }
 
 /* Alignment */
+body,
+.hero,
 .header, 
 .header ul,
 .main {
     display: flex;
+}
+
+body,
+.hero {
+    flex-direction: column;
 }
 
 .header {
@@ -51,9 +63,14 @@
 .main {
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap: 50px;
     padding-top: 80px;
     padding-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+.main .text {
+    width: 500px;
 }
 
 .header {
