@@ -15,6 +15,14 @@ html {
     background-color: #1f2937;
 }
 
+.button {
+    background-color: #3882f6;
+}
+
+.button:hover{
+    background-color: #3e72c6
+}
+
 .logo {
     font-size: 24px;
 }
@@ -55,6 +63,7 @@ body,
     flex-direction: column;
 }
 
+/* Hero */
 .header {
     align-items: center;
     justify-content: space-around;
@@ -77,6 +86,14 @@ body,
     padding-block: 20px;
 }
 
+.button {
+    padding-block: 5px;
+    padding-inline: 15px;
+    border-radius: 5px;
+}
+
+/* Products */
+
 
 /* Header links and hero's image */
 
@@ -85,7 +102,7 @@ body,
     gap: 20px;
 }
 
-.header a {
+.hero a {
     text-decoration: none;
 }
 
