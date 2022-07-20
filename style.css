@@ -1,131 +1,53 @@
 * {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-/* Make flex containers */
-.hero,
-.header,
-.main,
-.links ul,
-.products, 
-.images {
-    display: flex;
-}
-
-.hero, 
-footer {
-    background-color: #1f2937;
-}
-
-.hero, 
-.products {
-    flex-direction: column;
-}
+/* Fonts and Colors */
 
 .hero {
-    padding-inline: 100px;
-}
-
-.header {
-    justify-content: space-between;
-    align-items: center;
-    padding-block: 10px;
-    gap: 50px;
-}
-
-.main {
-    padding-block: 60px;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 20px;
-}
-
-.text {
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    gap: 10px;
-}
-
-.links ul {
-    gap: 20px;
-}
-
-/* Get rid of bullet points and link decorators */
-ul {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-/* Resize image */
-.main img {
-    width: 100%;
-    max-width: 500px;
-}
-
-.title,
-.logo {
-    color: #f9faf8;
-}
-
-.title {
-    font-size: 48px;
-    font-weight: bolder;
+    background-color: #1f2937;
 }
 
 .logo {
     font-size: 24px;
 }
 
-.links a,
-.secondary,
-.button {
+.logo {
+    color: #f9faf8;
+}
+
+.links a {
     color: #e5e7eb;
 }
 
-.button {
-    background-color: #3882f6;
-    width: fit-content;
-    padding: 5px 20px;
-    border-radius: 5px;
-}
+/* Alignment */
 
-.button:hover {
-    background-color: #3e72c6;
-}
-
-.products {
+.header, 
+.header ul,
+.main {
     display: flex;
+}
+
+.header {
     align-items: center;
-    padding: 50px;
+    justify-content: space-around;
 }
 
-.products .title, 
-.quote .text {
-    font-size: 36px;
+.header {
+    padding-block: 20px;
 }
 
-.products .title {
-    font-weight: extra-bold;
-    color: #1f2937;
+.header ul {
+    list-style-type: none;
+    gap: 20px;
 }
 
-.products img {
-    width: 150px;
-    height: 150px;
-    border: 3px solid #3882f6;
-    border-radius: 10px;
+.header a {
+    text-decoration: none;
 }
 
-.images {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
-    padding: 50px;
+.main img {
+    max-width: 400px;
 }
