@@ -54,12 +54,14 @@ body,
 .hero,
 .header, 
 .header ul,
-.main {
+.main, 
+.hero .text {
     display: flex;
 }
 
 body,
-.hero {
+.hero,
+.hero .text {
     flex-direction: column;
 }
 
@@ -80,6 +82,7 @@ body,
 
 .main .text {
     width: 500px;
+    gap: 15px;
 }
 
 .header {
@@ -87,6 +90,7 @@ body,
 }
 
 .button {
+    width: fit-content;
     padding-block: 5px;
     padding-inline: 15px;
     border-radius: 5px;
