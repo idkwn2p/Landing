@@ -43,21 +43,33 @@ html {
 }
 
 .text div,
-.text a {
+.text a,
+.person {
     font-size: 18px;
 }
 
-.products .title {
+.products .title,
+.quote {
     font-size: 36px;
 }
 
 .main .main-text,
-.products .title {
+.products .title,
+.person {
     font-weight: bolder;
 }
 
 .products .title {
     color: #1f2937;
+}
+
+.review {
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.quote {
+    background-color: #e5e7eb;
 }
 
 /* Alignment */
@@ -68,14 +80,16 @@ body,
 .main, 
 .hero .text,
 .container,
-.products{
+.products,
+.quote {
     display: flex;
 }
 
 body,
 .hero,
 .hero .text,
-.products {
+.products,
+.quote {
     flex-direction: column;
 }
 
@@ -112,7 +126,7 @@ body,
 /* Products */
 .products {
     align-items: center;
-    padding: 30px;
+    padding: 50px;
     gap: 30px;
 }
 
@@ -133,6 +147,16 @@ body,
 
 .info div {
     margin-top: 10px;
+}
+
+/* Quote */
+
+.quote {
+    padding-block: 100px;
+}
+
+.person {
+    text-align: right;
 }
 
 /* Header links and images */
