@@ -81,15 +81,15 @@ body,
 .hero .text,
 .container,
 .products,
-.quote {
+.review,
+.person {
     display: flex;
 }
 
 body,
 .hero,
 .hero .text,
-.products,
-.quote {
+.products {
     flex-direction: column;
 }
 
@@ -153,11 +153,18 @@ body,
 
 .quote {
     padding-block: 100px;
+    padding-inline: 200px;
+}
+
+.review {
+    justify-content: center;
+    padding-bottom: 20px;
 }
 
 .person {
-    text-align: right;
+    justify-content: flex-end;
 }
+
 
 /* Header links and images */
 
