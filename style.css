@@ -15,7 +15,8 @@ html {
     background-color: #1f2937;
 }
 
-.button {
+.button,
+.cta {
     background-color: #3882f6;
 }
 
@@ -28,7 +29,9 @@ html {
 }
 
 .logo,
-.main-text {
+.main-text,
+.cta,
+.cta a {
     color: #f9faf8;
 }
 
@@ -72,6 +75,10 @@ html {
     background-color: #e5e7eb;
 }
 
+.border {
+    border: 3px solid #f9faf8;
+}
+
 /* Alignment */
 body,
 .hero,
@@ -82,7 +89,9 @@ body,
 .container,
 .products,
 .review,
-.person {
+.person,
+.cta,
+.cta-container {
     display: flex;
 }
 
@@ -120,6 +129,10 @@ body,
     width: fit-content;
     padding-block: 5px;
     padding-inline: 15px;
+}
+
+.button,
+.cta {
     border-radius: 5px;
 }
 
@@ -165,6 +178,20 @@ body,
     justify-content: flex-end;
 }
 
+/* Call to Action */
+
+.cta {
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    padding-inline: 60px;
+    padding-block: 40px;
+}
+
+.cta-container {
+    justify-content: center;
+    padding: 100px 150px;
+}
 
 /* Header links and images */
 
@@ -173,7 +200,7 @@ body,
     gap: 20px;
 }
 
-.hero a {
+a {
     text-decoration: none;
 }
 
