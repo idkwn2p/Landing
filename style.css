@@ -11,7 +11,8 @@ html {
 
 /* Fonts and Colors */
 
-.hero {
+.hero,
+.footer {
     background-color: #1f2937;
 }
 
@@ -31,7 +32,8 @@ html {
 .logo,
 .main-text,
 .cta,
-.cta a {
+.cta a,
+.footer{
     color: #f9faf8;
 }
 
@@ -47,7 +49,9 @@ html {
 
 .text div,
 .text a,
-.person {
+.person,
+.cta,
+.footer {
     font-size: 18px;
 }
 
@@ -188,9 +192,16 @@ body,
     padding-block: 40px;
 }
 
-.cta-container {
+.cta-container,
+.footer {
     justify-content: center;
     padding: 100px 150px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 30px 100px;
 }
 
 /* Header links and images */
